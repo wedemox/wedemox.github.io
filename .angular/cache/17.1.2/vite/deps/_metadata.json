@@ -1,0 +1,67 @@
+{
+  "hash": "395de98a",
+  "configHash": "60332a5a",
+  "lockfileHash": "8db0f082",
+  "browserHash": "bdc1d579",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "f5e40add",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "6210ba63",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "aa5a6c4c",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "1cd37e55",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "55275d4e",
+      "needsInterop": false
+    },
+    "@ng-bootstrap/ng-bootstrap": {
+      "src": "../../../../../node_modules/@ng-bootstrap/ng-bootstrap/fesm2022/ng-bootstrap.mjs",
+      "file": "@ng-bootstrap_ng-bootstrap.js",
+      "fileHash": "a55e4f2f",
+      "needsInterop": false
+    },
+    "ngx-slick-carousel": {
+      "src": "../../../../../node_modules/ngx-slick-carousel/fesm2022/ngx-slick-carousel.mjs",
+      "file": "ngx-slick-carousel.js",
+      "fileHash": "3e760c37",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-4Z33UD5I": {
+      "file": "chunk-4Z33UD5I.js"
+    },
+    "chunk-O7OM4PDL": {
+      "file": "chunk-O7OM4PDL.js"
+    },
+    "chunk-F2LUS3X5": {
+      "file": "chunk-F2LUS3X5.js"
+    },
+    "chunk-SMRDUMZJ": {
+      "file": "chunk-SMRDUMZJ.js"
+    },
+    "chunk-EMHGWHPR": {
+      "file": "chunk-EMHGWHPR.js"
+    }
+  }
+}

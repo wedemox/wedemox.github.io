@@ -1,0 +1,288 @@
+<section class="main-banner">
+    <video width="320" height="540" controls>
+        <source src="../../assets/banner.mp4" type="video/mp4">
+        <source src="../../assets/banner.ogg" type="video/ogg">
+      </video>
+</section>
+
+<section class="home-section-business">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 img-container">
+                <img class="service-img _1" src="../../assets/images/home/artistic.jpg">
+                <!-- <img class="service-img _1" src="../../configs/homeHeaderTitle.json"> -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- <ng-content select="business"></ng-content> -->
+                <!-- <div class="soft-highlight" *ngFor="let headTitle of sectionHeaderTitle">
+                   {{headTitle}}
+                </div> -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Artistic Story Telling <span>Celebrating</span>
+                            YOU!</h1>
+                        <p>
+                            
+Welcome to Modern Love Film, where we infuse magic into your wedding memories turning them into timeless tales of love and companionship.
+
+We are an award-winning premium wedding photography and films brand, known for our artistic, professional and customer centric approach.
+
+We believe in and exist to showcase the most beautiful and heartfelt stories of your life in their true magnificence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="home-section-our-success">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h1>OUR  <span class="soft-highlight">SUCCESS</span> <br>
+                    STARTS WITH YOU</h1>
+                <p>At ModernFilm, we are a family unit powered by diversity, inclusion, transparency, respect,
+                    integrity and passion for our clients and our people. Our business growth depends on our employees’
+                    professional development. By forging a meaningful partnership with our people, we stay nimble, ahead
+                    of the competition and on top of our industry. Come see what we’re all about!</p>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="info-bar">
+                            <li *ngFor="let item of ourSeccess">
+                                {{item.title}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 img-container">
+                <img class="service-img _1" src="../../assets/images/home/our-seccess.jpg">
+                <!-- <img class="service-img _1" src="../../assets/images/home/it-challenges-1.png"> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 img-container">
+                <img class="service-img _2" src="../../assets/images/home/service-02.png" alt="service">
+                <img class="service-img _3" src="../../assets/images/home/service-03.png" alt="service">
+                <img class="service-img _1" src="../../assets/images/home/service-01.png" alt="service">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h1>Our <br><span class="soft-highlight">STORIES</span> </h1>
+              
+                <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="slideConfigService">
+                    @for (slide of slides; track slide.img) {
+                    <div ngxSlickItem class="slide" *ngFor="let info of serviceInfo; index as i">
+                        <div class="card">
+                            <img class="card-img-top" src="../../assets/images/home/service-info-img-{{i+1}}.jpg"
+                                alt="{{info.title}}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{info.title}}</h5>
+                                <p class="card-text">{{info.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-section-heretohelp">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <h1>
+                    Nurtured to perfection</h1>
+                <p>
+                    No matter how big or small, your company can benefit from the help of ModernFilm Technologies. We
+                    specialize in technology solutions, systems integration, rapid application development and process
+                    automation. Our service offerings can help push your business to greater heights.
+                </p>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="card col-lg-3 col-md-3 col-sm-12" *ngFor="let info of learn">
+                                <div class="card-container">
+                                    <div class="card-header">
+                                        <i class="icon icon-medium">
+                                            <svg focusable="false">
+                                                <use attr.xlink:href="{{info.icon}}"></use>
+                                            </svg>
+                                        </i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{info.title}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 img-container">
+                <img class="free-img _1" src="../../assets/images/home/help-to-success.png">
+                <!-- <img class="free-img" src="../../assets/images/home/help-to-success-3.png"> -->
+            </div>
+        </div>
+    </div>
+    <img class="free-img _2" src="../../assets/images/home/help-to-success-2.jpeg">
+</section>
+
+<section class="home-section-testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="testimonial-text">
+                    <h1>What our <span class="soft-highlight">customers</span> are <br> saying about us</h1>
+                </div>
+                <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel"
+                    [config]="slideConfigTestimonials">
+                    @for (slide of slides; track slide.img) {
+                    <div ngxSlickItem class="slide" *ngFor="let info of testimonials; index as i">
+                        <div class="slide-container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="img-container">
+                                        <img src="../../assets/images/testimonials/testimonial-{{i+1}}.png"
+                                            alt="{{info.title}}">
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 testimonials">
+                                    <p>
+                                        <span>
+                                            <i class="icon icon-small">
+                                                <svg focusable="false">
+                                                    <use xlink:href="#icon_quotes"></use>
+                                                </svg>
+                                            </i>
+                                        </span>
+                                        {{info.description}}
+                                        <span><i class="icon icon-small">
+                                                <svg focusable="false">
+                                                    <use xlink:href="#icon_quotes"></use>
+                                                </svg>
+                                            </i>
+                                        </span>
+                                    </p>
+                                    <h6><span class="test-title">{{info.title}}</span></h6>
+                                    <h6>{{info.name}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="expert-view">
+    <div class="container">
+        <div class="row">
+            <h1>WHAT OUR  <span class="soft-highlight">EXPERTS</span>
+                ARE SAYING (need to video here)</h1>
+        </div>
+    </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfigExpertView">
+        <div ngxSlickItem class="slide" *ngFor="let info of expertView; index as i">
+           <div class="card">
+            <img class="free-img" src="../../assets/images/expert-view/expert-view-{{1+i}}.jpg">
+            <p>{{info.cardTitle}}</p>
+            <h5>{{info.title}}</h5>
+            <h6>{{info.date}}</h6>
+            <p>{{info.description}}</p>
+           </div>
+        </div>
+    </ngx-slick-carousel>
+</section>
+
+<section class="section-contact">
+    <!-- <div class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Thane+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.acadoo.de/'></a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=bbfe6d95a433afe5975d3f534470ff86dfb24eba'></script>
+    </div> -->
+    <div class="container">
+        <div class="row align-items-stretch no-gutters contact-wrap">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div>
+                    <h1>CONTACT
+                        US</h1>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="form">
+                    <h5>Send us a message</h5>
+                    <form class="mb-5"  id="contactForm" name="contactForm" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-5">
+                                <label for="" class="col-form-label">Name *</label>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                            </div>
+                            <div class="col-md-6 form-group mb-5">
+                                <label for="" class="col-form-label">Email *</label>
+                                <input type="text" class="form-control" name="email" id="email"
+                                    placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-5">
+                                <label for="" class="col-form-label">Phone</label>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone #">
+                            </div>
+                            <div class="col-md-6 form-group mb-5">
+                                <label for="" class="col-form-label">Company</label>
+                                <input type="text" class="form-control" name="company" id="company"
+                                    placeholder="Company  name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group mb-5">
+                                <label for="message" class="col-form-label">Message *</label>
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="4"
+                                    placeholder="Write your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                                <span class="submitting"></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="form-message-warning mt-4"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-info h-100">
+                    <h3>Contact Information</h3>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, magnam!</p>
+                    <ul class="list-unstyled">
+                        <li class="d-flex">
+                            <span class="wrap-icon icon-room mr-3"></span>
+                            <span class="text">9757 Aspen Lane South Richmond Hill, NY 11419</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="wrap-icon icon-phone mr-3"></span>
+                            <span class="text">+1 (291) 939 9321</span>
+                        </li>
+                        <li class="d-flex">
+                            <span class="wrap-icon icon-envelope mr-3"></span>
+                            <span class="text"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

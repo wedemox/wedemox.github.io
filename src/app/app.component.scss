@@ -1,0 +1,127 @@
+::ng-deep body{
+    font-family: 'Livvic', sans-serif !important;
+    background: #f5f9ff !important;
+    h1,h2,h3,h4,h5,h6{
+    color: #023e8a;
+    font-family: "Rajdhani", sans-serif;
+    }
+ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+svg {
+	vertical-align: middle;
+	margin: auto;
+	align-content: center;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+.icon-large>svg {
+	width: 100px;
+	height: 100px;
+}
+.icon-medium>svg {
+	width: 50px;
+	height: 50px;
+}
+.icon-small>svg {
+	width: 34px;
+	height: 34px;
+}
+.icon-ex-small>svg {
+	width: 24px;
+	height: 24px;
+}
+.img-container{
+	position: relative;
+	min-height: 200px;
+}
+.free-img{
+    position: absolute;
+    top:0px;
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
+}
+.center{
+	display: block;
+	text-align: center;
+}
+}
+
+::ng-deep .slick-slider {
+	width: calc(100% - 100px);
+	margin: auto;
+	.slick-list {
+		padding: 0!important;
+	}
+	.slick-prev:before, .slick-next:before{
+		content: none;
+	}
+}
+
+::ng-deep .our-services{
+	.slick-slider{
+		width:100%;
+	}
+	.slick-prev, .slick-next{
+		top: -50px;
+		left:auto;
+		svg{
+			fill:#48cae4;
+		}
+	}
+	.slick-prev{
+		right: 70px;
+    	top: -80px;
+	}
+	.slick-next{
+		right:20px;
+	}
+}
+
+::ng-deep .home-section-testimonials{
+	.slick-slider{
+		width: 100%;
+	}
+	.carousel .slick-list {
+        padding-top:150px !important;
+		margin-top:-150px;
+    }
+	.slick-prev, .slick-next{
+		bottom: -50px;
+		top: auto;
+	}
+	.slick-prev{
+		left:50%;
+	}
+	.slick-next{
+		left:55%;
+	}
+	svg{
+		fill:#48cae4;
+	}
+}
+
+
+::ng-deep  .expert-view{
+	.slick-slide{
+		transition: all 1s ease-in-out;
+		transform: scale(0.85);
+		&.slick-current + .slick-slide{
+				transform: scale(1);
+		
+		}
+	}
+	
+}
+::ng-deep .form-control{
+	border: none;
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    background: none;
+}
