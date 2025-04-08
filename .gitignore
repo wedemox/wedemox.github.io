@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+dist/
+.tmp/
+.angular/
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular environment files (optional, if you don't want to commit them)
+src/environments/environment*.ts
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+env/
+venv/
+instance/
+.webassets-cache
+
+# Flask specific
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Firebase service account
+serviceAccountKey.json
+
+# VS Code
+.vscode/
+
+# Coverage
+coverage/
+*.lcov
+
+# Production build folder (if separate)
+build/
+
+# IDEs
+.idea/
+*.sublime-project
+*.sublime-workspace
