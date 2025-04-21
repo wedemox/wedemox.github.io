@@ -1,17 +1,13 @@
 <section class="main-banner">
-    <video width="320" height="540" controls>
+    <video autoplay muted loop playsinline>
         <source src="../../assets/banner.mp4" type="video/mp4">
-        <source src="../../assets/banner.ogg" type="video/ogg">
       </video>
 </section>
 
 <section class="home-section-business">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 img-container">
-                <img class="service-img _1" src="../../assets/images/home/artistic.jpg">
-                <!-- <img class="service-img _1" src="../../configs/homeHeaderTitle.json"> -->
-            </div>
+            
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <!-- <ng-content select="business"></ng-content> -->
                 <!-- <div class="soft-highlight" *ngFor="let headTitle of sectionHeaderTitle">
@@ -19,8 +15,9 @@
                 </div> -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1>Artistic Story Telling <span>Celebrating</span>
-                            YOU!</h1>
+                        <h2>Candid Shutters</h2>
+                        <h4>Artistic Story Telling <span>Celebrating</span>
+                            YOU!</h4>
                         <p>
                             
 Welcome to Modern Love Film, where we infuse magic into your wedding memories turning them into timeless tales of love and companionship.
@@ -33,6 +30,42 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
                 </div>
             </div>
 
+            <div class="col-lg-6 col-md-6 col-sm-12 img-container">
+                <img class="service-img _1" src="../../assets/images/home/artistic.jpg">
+                <!-- <img class="service-img _1" src="../../configs/homeHeaderTitle.json"> -->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="our-services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 img-container">
+                <h1>Our <br><span class="soft-highlight">STORIES</span> </h1>
+                <!-- <img class="service-img _2" src="../../assets/images/home/service-02.png" alt="service">
+                <img class="service-img _3" src="../../assets/images/home/service-03.png" alt="service"> -->
+                <img class="service-img _1" src="../../assets/images/home/service.jpg" alt="service">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                
+              
+                <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="slideConfigService">
+                    @for (slide of slides; track slide.img) {
+                    <div ngxSlickItem class="slide" *ngFor="let info of serviceInfo; index as i">
+                        <div class="card">
+                            <img class="card-img-top" src="../../assets/images/home/service-info-img-{{i+1}}.jpg"
+                                alt="{{info.title}}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{info.title}}</h5>
+                                <p class="card-text">{{info.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </ngx-slick-carousel>
+            </div>
         </div>
     </div>
 </section>
@@ -42,8 +75,8 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
         <div class="row">
 
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <h1>OUR  <span class="soft-highlight">SUCCESS</span> <br>
-                    STARTS WITH YOU</h1>
+                <h2>OUR SUCCESS</h2>
+                <h4>STARTS WITH YOU</h4>
                 <p>At ModernFilm, we are a family unit powered by diversity, inclusion, transparency, respect,
                     integrity and passion for our clients and our people. Our business growth depends on our employees’
                     professional development. By forging a meaningful partnership with our people, we stay nimble, ahead
@@ -66,34 +99,24 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
     </div>
 </section>
 
-<section class="our-services">
+<section class="expert-view">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 img-container">
-                <img class="service-img _2" src="../../assets/images/home/service-02.png" alt="service">
-                <img class="service-img _3" src="../../assets/images/home/service-03.png" alt="service">
-                <img class="service-img _1" src="../../assets/images/home/service-01.png" alt="service">
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <h1>Our <br><span class="soft-highlight">STORIES</span> </h1>
-              
-                <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="slideConfigService">
-                    @for (slide of slides; track slide.img) {
-                    <div ngxSlickItem class="slide" *ngFor="let info of serviceInfo; index as i">
-                        <div class="card">
-                            <img class="card-img-top" src="../../assets/images/home/service-info-img-{{i+1}}.jpg"
-                                alt="{{info.title}}">
-                            <div class="card-body">
-                                <h5 class="card-title">{{info.title}}</h5>
-                                <p class="card-text">{{info.description}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    }
-                </ngx-slick-carousel>
-            </div>
+            <h1>WHAT OUR  <span class="soft-highlight">EXPERTS</span>
+                ARE SAYING (need to video here)</h1>
         </div>
     </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfigExpertView">
+        <div ngxSlickItem class="slide" *ngFor="let info of expertView; index as i">
+           <div class="card">
+            <img class="free-img" src="../../assets/images/expert-view/expert-view-{{1+i}}.jpg">
+            <p>{{info.cardTitle}}</p>
+            <h5>{{info.title}}</h5>
+            <h6>{{info.date}}</h6>
+            <p>{{info.description}}</p>
+           </div>
+        </div>
+    </ngx-slick-carousel>
 </section>
 
 <section class="home-section-heretohelp">
@@ -185,27 +208,6 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
             </div>
         </div>
     </div>
-</section>
-
-
-<section class="expert-view">
-    <div class="container">
-        <div class="row">
-            <h1>WHAT OUR  <span class="soft-highlight">EXPERTS</span>
-                ARE SAYING (need to video here)</h1>
-        </div>
-    </div>
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfigExpertView">
-        <div ngxSlickItem class="slide" *ngFor="let info of expertView; index as i">
-           <div class="card">
-            <img class="free-img" src="../../assets/images/expert-view/expert-view-{{1+i}}.jpg">
-            <p>{{info.cardTitle}}</p>
-            <h5>{{info.title}}</h5>
-            <h6>{{info.date}}</h6>
-            <p>{{info.description}}</p>
-           </div>
-        </div>
-    </ngx-slick-carousel>
 </section>
 
 <section class="section-contact">

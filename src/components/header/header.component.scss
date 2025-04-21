@@ -7,6 +7,20 @@ nav{
     &.sticky{
         top:0px; 
         background:#fff;
+        #navbarNav{
+            .nav-link{
+                color: #000;
+            }}
+            .logo{
+                    flex-direction: row; 
+                    gap: 15px;
+                    .icon{
+                        svg{
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }      
+            }
     }
     .navbar-brand{
         font-family: 'Rajdhani', sans-serif;
@@ -18,14 +32,31 @@ nav{
         .nav-link{
             font-family: 'Rajdhani', sans-serif;
             font-weight: 500;
-            color: #000;
+            color: #fff;
             cursor: pointer;
             margin: 0 5px;
+            font-size:18px;
         }
         border-radius:5px;
         padding:0 25px;
         &.navbar-collapse{
             flex-grow:unset;
+        }
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .icon{
+            svg{
+                width: 105px;
+                height: 105px;
+            }
+        }
+        .logo-text{      
+                font-family: "Charmonman", cursive;
+                color: #ea655e;
         }
     }
 }
