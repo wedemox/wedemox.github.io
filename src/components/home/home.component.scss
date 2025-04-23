@@ -112,7 +112,7 @@ video{
 }
 ::ng-deep .soft-highlight{
     span{
-        color:#48cae4;
+        color:#ff647f;
     }
 }
 section{
@@ -135,8 +135,7 @@ section{
         position: relative;
         margin: 200px 0;
         img{
-            transform: rotate(-15deg);
-            border-radius: 0 60px;
+            transform: rotate(-5deg);
         }
         .free-img-right{
             right:0px;
@@ -175,8 +174,8 @@ section{
             }&._3{
                 max-width:100%;
                 width:auto;
-                top:10px;
-                left:10px;
+                top:65px;
+                left:0px;
             }
         }
     }
@@ -184,7 +183,7 @@ section{
         margin:0 10px;
         border:none;
         .card-title{
-            color:#023e8a;
+            color:#000;
         }
     }
 }
@@ -223,8 +222,10 @@ section{
 }
 
 .home-section-heretohelp{
+    margin:0px;
     position:relative;
     h1{
+        padding-top:30px;
         span{
             font-size: 150px;
             font-weight: 100;
@@ -247,13 +248,11 @@ section{
             align-items: center;
             margin-top: 20px;
             svg{
-                fill: #48cae4;
+                fill: #ff647f;
             }
         }
         .card-container{
-            background:#fff;
             display: table-cell;
-            border-top:1px solid #48cae4;
         }
         .card-title {
             color: #023e8a;
@@ -277,7 +276,9 @@ section{
 }
 
 .home-section-testimonials{
-    margin-bottom:100px;
+    margin:0px;
+    padding-top:30px;
+    background: #f4f4f4;
     .img-container{
      position: relative;
      img{
@@ -303,7 +304,7 @@ section{
             font-size: 10px;
            svg{
             margin-top:-10px;
-            fill:#48cae4;
+            fill:#ff647f;
            }
             &:last-child{
                 svg{
@@ -326,7 +327,7 @@ section{
         width:100%;
         content: "";
         padding-top:5px;
-        border-top:2px solid #48cae4;
+        border-top:2px solid #ff647f;
         font-weight: 900;
        }
        }
@@ -345,12 +346,18 @@ section{
     }
  }
  .expert-view{
+    padding: 70px 0;
+    margin: 0;
+    background: #fff4f6;
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+    }
     .card{
         border-radius:0;
-        padding:25px;
         position:relative;
-        background:rgba(0,0,0, .6);
         overflow:hidden;
+        border:none;
         .free-img{
             left:0px;
         }
@@ -398,6 +405,7 @@ section{
 }
  .section-contact{
     position:relative;
+    margin:0px;
     .contact-wrap {
         .contact-info {
             background: #35477d;

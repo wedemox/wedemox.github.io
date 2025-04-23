@@ -53,16 +53,21 @@ export class HomeComponent {
   ];
   serviceInfo = [
     {
-      title: 'IT Management',
-      description: 'Neque porro quisquam est qui most dolorem quia enough impedit same quo minus quod and maxime',
+      title: 'Best Wedding Photographer Mumbai-South Indian Wedding Mumbai',
+      link: 'https://www.modernfilm.in/'
     },
     {
-      title: 'Database Security',
-      description: 'Neque porro quisquam est qui most dolorem quia enough impedit same quo minus quod and maxime'
+      title: 'Best Wedding Photographer Mumbai-South Indian Wedding Mumbai',
+      link: 'https://www.modernfilm.in/'
     },
     {
-      title: 'Analytic Solutions',
-      description: `Neque porro quisquam est qui most dolorem quia enough impedit same quo minus quod and maxime`
+      title: 'Best Wedding Photographer Mumbai-South Indian Wedding Mumbai',
+      link: 'https://www.modernfilm.in/'
+    }
+    ,
+    {
+      title: 'Best Wedding Photographer Mumbai-South Indian Wedding Mumbai',
+      link: 'https://www.modernfilm.in/'
     }
   ];
   mainList = [
@@ -75,31 +80,23 @@ export class HomeComponent {
   learn = [
     {
       icon:"#icon_bizSolution",
-      title: 'Plant Setup and Layout'
+      title: 'Photography',
+      description:`Candid photography (focusing on natural candid shots of the bride-groom and main family) & traditional photography (coverage of the entire event).`
     },
     {
       icon:"#icon_talent",
-      title: 'Equipment Layout'
+      title: 'Videography',
+      description:`Cinematography (artistic style videography with focus on the bride-groom and main family and their priceless candid moments) & traditional videography (coverage of the entire event).`
     },
     {
       icon:"#icon_products",
-      title: 'Piping placement and Layout'
+      title: 'Photobooks & Albums',
+      description:`Handcrafted custom designed wedding photo books and albums to cater to every taste and preference`
     },
     {
       icon:"#icon_marketInsights",
-      title: 'Piping Materials'
-    },
-    {
-      icon:"#icon_marketInsights",
-      title: 'Piping Supports'
-    },
-    {
-      icon:"#icon_marketInsights",
-      title: 'Piping Stress Analysis'
-    },
-    {
-      icon:"#icon_marketInsights",
-      title: 'CAD or 3D Modeling'
+      title: 'Post-production',
+      description:`Editing services in cinematic teaser and short film & traditional video.`
     }
   ];
 
@@ -360,6 +357,18 @@ export class HomeComponent {
 
   expertView =[ 
     {
+    cardTitle:"",
+    date:"Watch Elizabeth's Entire Testimonial",
+    title: 'Elizabeth McConnell | VP of Operations | iLabor360',
+    description: `ModernFilm Creative team conveyed our company in the utmost light. We got to showcase all the different aspects we wanted to with their helpful planning and execution, and just listening to our feedback. . . . They met and exceeded expectations with the final product.`,
+  },
+  {
+    cardTitle:"",
+    date:"Watch Elizabeth's Entire Testimonial",
+    title: 'Elizabeth McConnell | VP of Operations | iLabor360',
+    description: `ModernFilm Creative team conveyed our company in the utmost light. We got to showcase all the different aspects we wanted to with their helpful planning and execution, and just listening to our feedback. . . . They met and exceeded expectations with the final product.`,
+  },
+  {
     cardTitle:"",
     date:"Watch Elizabeth's Entire Testimonial",
     title: 'Elizabeth McConnell | VP of Operations | iLabor360',

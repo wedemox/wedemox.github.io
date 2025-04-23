@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-5 col-md-5 col-sm-12">
                 <!-- <ng-content select="business"></ng-content> -->
                 <!-- <div class="soft-highlight" *ngFor="let headTitle of sectionHeaderTitle">
                    {{headTitle}}
@@ -20,17 +20,17 @@
                             YOU!</h4>
                         <p>
                             
-Welcome to Modern Love Film, where we infuse magic into your wedding memories turning them into timeless tales of love and companionship.
-
-We are an award-winning premium wedding photography and films brand, known for our artistic, professional and customer centric approach.
-
+Welcome to Modern Love Film, where we infuse magic into your wedding memories turning them into timeless tales of love and companionship.<br>
+<br>
+We are an award-winning premium wedding photography and films brand, known for our artistic, professional and customer centric approach.<br>
+<br>
 We believe in and exist to showcase the most beautiful and heartfelt stories of your life in their true magnificence.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-12 img-container">
+            <div class="col-lg-7 col-md-7 col-sm-12 img-container">
                 <img class="service-img _1" src="../../assets/images/home/artistic.jpg">
                 <!-- <img class="service-img _1" src="../../configs/homeHeaderTitle.json"> -->
             </div>
@@ -43,27 +43,26 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 img-container">
-                <h1>Our <br><span class="soft-highlight">STORIES</span> </h1>
-                <!-- <img class="service-img _2" src="../../assets/images/home/service-02.png" alt="service">
-                <img class="service-img _3" src="../../assets/images/home/service-03.png" alt="service"> -->
-                <img class="service-img _1" src="../../assets/images/home/service.jpg" alt="service">
+                <img class="service-img _2" src="../../assets/images/home/service-02.png" alt="service">
+                <img class="service-img _1" src="../../assets/images/home/service.png" alt="service">
+                <img class="service-img _3" src="../../assets/images/home/service-03.png" alt="service">
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
                 
-              
+                <h2>Our <span class="soft-highlight">Stories</span> </h2>
                 <ngx-slick-carousel class="carousel row" #slickModal="slick-carousel" [config]="slideConfigService">
                     @for (slide of slides; track slide.img) {
                     <div ngxSlickItem class="slide" *ngFor="let info of serviceInfo; index as i">
                         <div class="card">
-                            <img class="card-img-top" src="../../assets/images/home/service-info-img-{{i+1}}.jpg"
+                            <img class="card-img-top" src="../../assets/images/home/stories-info-img-{{i+1}}.jpg"
                                 alt="{{info.title}}">
                             <div class="card-body">
                                 <h5 class="card-title">{{info.title}}</h5>
-                                <p class="card-text">{{info.description}}</p>
+                                <a href="info.link" class="card-text">View Details</a>
                             </div>
                         </div>
                     </div>
-                    }
+                    }                     
                 </ngx-slick-carousel>
             </div>
         </div>
@@ -102,18 +101,18 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
 <section class="expert-view">
     <div class="container">
         <div class="row">
-            <h1>WHAT OUR  <span class="soft-highlight">EXPERTS</span>
-                ARE SAYING (need to video here)</h1>
+            <h2>love so devine</h2>
         </div>
     </div>
     <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfigExpertView">
         <div ngxSlickItem class="slide" *ngFor="let info of expertView; index as i">
            <div class="card">
-            <img class="free-img" src="../../assets/images/expert-view/expert-view-{{1+i}}.jpg">
-            <p>{{info.cardTitle}}</p>
+            <img class="card-img-top" src="../../assets/images/home/videos-thumb-img-{{i+1}}.jpg"
+                                alt="{{info.title}}">
+            <!-- <p>{{info.cardTitle}}</p>
             <h5>{{info.title}}</h5>
             <h6>{{info.date}}</h6>
-            <p>{{info.description}}</p>
+            <p>{{info.description}}</p> -->
            </div>
         </div>
     </ngx-slick-carousel>
@@ -133,7 +132,7 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="row">
-                            <div class="card col-lg-3 col-md-3 col-sm-12" *ngFor="let info of learn">
+                            <div class="card col-lg-6 col-md-6 col-sm-12" *ngFor="let info of learn">
                                 <div class="card-container">
                                     <div class="card-header">
                                         <i class="icon icon-medium">
@@ -144,6 +143,7 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">{{info.title}}</h5>
+                                        <p class="card-text">{{info.description}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -152,18 +152,18 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 img-container">
-                <img class="free-img _1" src="../../assets/images/home/help-to-success.png">
-                <!-- <img class="free-img" src="../../assets/images/home/help-to-success-3.png"> -->
+                <!-- <img class="free-img _1" src="../../assets/images/home/help-to-success.png"> -->
+                <img src="../../assets/images/home/help-to-success-2.jpg">
             </div>
         </div>
     </div>
-    <img class="free-img _2" src="../../assets/images/home/help-to-success-2.jpeg">
+    <!-- <img class="free-img _2" src="../../assets/images/home/help-to-success-2.jpg"> -->
 </section>
 
 <section class="home-section-testimonials">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col col-lg-12 col-md-12 col-sm-12">
                 <div class="testimonial-text">
                     <h1>What our <span class="soft-highlight">customers</span> are <br> saying about us</h1>
                 </div>
@@ -216,14 +216,9 @@ We believe in and exist to showcase the most beautiful and heartfelt stories of 
     </div> -->
     <div class="container">
         <div class="row align-items-stretch no-gutters contact-wrap">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div>
-                    <h1>CONTACT
-                        US</h1>
-                </div>
-            </div>
             <div class="col-md-8">
                 <div class="form">
+                    <h1>CONTACT US</h1>
                     <h5>Send us a message</h5>
                     <form class="mb-5"  id="contactForm" name="contactForm" novalidate="novalidate">
                         <div class="row">

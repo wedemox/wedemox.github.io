@@ -70,7 +70,7 @@ svg:not(:root) {
 		top: -50px;
 		left:auto;
 		svg{
-			fill:#48cae4;
+			fill:#ff647f;
 		}
 	}
 	.slick-prev{
@@ -91,7 +91,7 @@ svg:not(:root) {
 		margin-top:-150px;
     }
 	.slick-prev, .slick-next{
-		bottom: -50px;
+		bottom: 0px;
 		top: auto;
 	}
 	.slick-prev{
@@ -101,7 +101,7 @@ svg:not(:root) {
 		left:55%;
 	}
 	svg{
-		fill:#48cae4;
+		fill:#ff647f;
 	}
 }
 
